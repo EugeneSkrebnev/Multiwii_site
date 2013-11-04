@@ -1,0 +1,12 @@
+{
+  "name": "Multi Wii for iOS site",
+  "version": "0.0.1",
+  "dependencies": {
+    "bootstrap": "~3.0.0",
+    "modernizr": "~2.6.2",
+    "jquery": "~2.0.3",
+    "less.js": "~1.5.0"
+  },
+  "devDependencies": {}
+}
+
