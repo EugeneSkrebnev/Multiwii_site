@@ -74,7 +74,11 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           dot: true,
-          src: ['<%= params.distPath %>/*', '.tmp/*']
+          src: [
+            '<%= params.distPath %>/*',
+            '!<%= params.distPath %>/.git*',
+            '.tmp/*'
+          ]
         }]
       }
     },
@@ -170,7 +174,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= params.appPath %>',
-          src: ['.htaccess', 'favicon.ico', 'robots.txt'],
+          src: ['.htaccess', 'favicon.ico', 'robots.txt', 'fonts/*'],
           dest: '<%= params.distPath %>/'
         }]
       }
