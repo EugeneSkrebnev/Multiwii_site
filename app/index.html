@@ -6,13 +6,16 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Wii for iOS</title>
+    <meta name="description" content="Multi Wii for iOS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css styles/main.css -->
     <link rel="stylesheet/less" href="bower_components/bootstrap/less/bootstrap.less">
     <link rel="stylesheet/less" href="styles/main.less">
+    <link rel="stylesheet/less" href="styles/header.less">
+    <link rel="stylesheet/less" href="styles/promo_box.less">
+    <link rel="stylesheet/less" href="styles/key_features.less">
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -22,19 +25,76 @@
     <!--<!(endif)-->
   </head>
   <body>
-    <div class="container">
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p>You now have</p>
-        <ul>
-          <li>HTML5 Boilerplate</li>
-          <li>Bootstrap</li>
-        </ul>
-        <p>installed.</p>
-        <h3>Enjoy coding! - Yeoman</h3>
+    <header>
+      <div class="container">
+        <div class="logo"></div>
+        <nav>
+          <ul>
+            <li class="item active">
+              <a href="#about">About</a>
+            </li>
+            <li class="item">
+              <a href="#features">Features</a>
+            </li>
+            <li class="item">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="clearfix"></div>
+      </div>
+    </header>
+
+    <div id="about" class="promo-box">
+      <div class="container">
+        <div class="sample"></div>
+        <div class="message">
+          <h1>MultiWii Quadrocopter App</h1>
+          <div class="content">
+            <p>Vulputate velit esse molestie consequat vel illum dolore eu. Modo typi qui nunc nobis videntur parum, clari fiant sollemnes in. Nunc putamus parum claram anteposuerit litterarum formas humanitatis. Saepius claritas est etiam processus dynamicus qui sequitur mutationem consuetudium lectorum? Insitam est usus, legentis in iis qui facit eorum claritatem Investigationes demonstraverunt lectores. Nam liber tempor cum soluta nobis eleifend option.</p>
+            <p>Ullamcorper suscipit lobortis nisl ut aliquip, ex ea commodo consequat duis. Autem vel eum iriure: dolor in hendrerit in vulputate.</p>
+          </div>
+        </div>
       </div>
     </div>
 
+    <div id="features" class="key-features">
+      <div class="container">
+        <h2>Key features</h2>
+        <div class="row">
+          <div class="feature col-md-4">
+            <h3>Lorem Ipsum Dolor</h3>
+            <article>
+              Veniam quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat duis. Humanitatis per seacula quarta decima et quinta decima eodem, modo typi qui nunc!
+            </article>
+          </div>
+          <div class="feature col-md-4">
+            <h3>Lorem Ipsum Dolor</h3>
+            <article>
+              Veniam quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat duis. Humanitatis per seacula quarta decima et quinta decima eodem, modo typi qui nunc!
+            </article>
+          </div>
+          <div class="feature col-md-4">
+            <h3>Lorem Ipsum Dolor</h3>
+            <article>
+              Veniam quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat duis. Humanitatis per seacula quarta decima et quinta decima eodem, modo typi qui nunc!
+            </article>
+          </div>
+          <div class="feature col-md-4">
+            <h3>Lorem Ipsum Dolor</h3>
+            <article>
+              Veniam quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat duis. Humanitatis per seacula quarta decima et quinta decima eodem, modo typi qui nunc!
+            </article>
+          </div>
+          <div class="feature col-md-4">
+            <h3>Lorem Ipsum Dolor</h3>
+            <article>
+              Veniam quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat duis. Humanitatis per seacula quarta decima et quinta decima eodem, modo typi qui nunc!
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -55,19 +115,8 @@
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
 
-    <!-- build:js scripts/vendor/bootstrap.js -->
-    <script src="bower_components/bootstrap/js/affix.js"></script>
-    <script src="bower_components/bootstrap/js/alert.js"></script>
-    <script src="bower_components/bootstrap/js/dropdown.js"></script>
-    <script src="bower_components/bootstrap/js/tooltip.js"></script>
-    <script src="bower_components/bootstrap/js/modal.js"></script>
-    <script src="bower_components/bootstrap/js/transition.js"></script>
-    <script src="bower_components/bootstrap/js/button.js"></script>
-    <script src="bower_components/bootstrap/js/popover.js"></script>
-    <script src="bower_components/bootstrap/js/carousel.js"></script>
-    <script src="bower_components/bootstrap/js/scrollspy.js"></script>
+    <!-- build:js scripts/bootstrap.js -->
     <script src="bower_components/bootstrap/js/collapse.js"></script>
-    <script src="bower_components/bootstrap/js/tab.js"></script>
     <!-- endbuild -->
   </body>
 </html>

@@ -1,0 +1,39 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 5px 0 14px;
+  background-image: url("../images/suture.png"), url("../images/bg.png");
+  background-repeat: repeat-x, repeat;
+  background-position: bottom, top;
+
+  .logo {
+    background-image: url("../images/logo_header.png");
+    width: 212px;
+    height: 56px;
+    float: left;
+  }
+
+  nav {
+    float: right;
+    line-height: 56px;
+
+    .item {
+      text-transform: uppercase;
+      float: left;
+      list-style: none;
+      font-family: MontserratRegular;
+      padding: 0 15px;
+
+      a {
+        color: #fff;
+      }
+    }
+
+    .item.active {
+      a {
+        color: #9d9d9d;
+      }
+    }
+  }
+}
