@@ -174,7 +174,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= params.appPath %>',
-          src: ['.htaccess', 'favicon.ico', 'robots.txt', 'fonts/*'],
+          src: ['.htaccess', 'favicon.ico', 'robots.txt', 'fonts/*', 'CNAME'],
           dest: '<%= params.distPath %>/'
         }]
       }
