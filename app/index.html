@@ -21,13 +21,13 @@
     <script src="bower_components/less.js/dist/less-1.5.0.js"></script>
     <!--<!(endif)-->
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar" data-offset="100">
     <header>
       <div class="container">
         <div class="logo"></div>
-        <nav>
-          <ul>
-            <li class="item active">
+        <nav id="navbar">
+          <ul class="nav">
+            <li class="item">
               <a href="#about">About</a>
             </li>
             <li class="item">
@@ -138,7 +138,7 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/bootstrap.js -->
-    <script src="bower_components/bootstrap/js/collapse.js"></script>
+    <script src="bower_components/bootstrap/js/scrollspy.js"></script>
     <!-- endbuild -->
   </body>
 </html>
