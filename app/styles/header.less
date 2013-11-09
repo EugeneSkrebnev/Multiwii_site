@@ -1,5 +1,6 @@
 header {
   position: fixed;
+  z-index: 50;
   top: 0;
   width: 100%;
   padding: 5px 0 14px;
@@ -12,11 +13,22 @@ header {
     width: 212px;
     height: 56px;
     float: left;
+    margin-right: 30px;
   }
 
   nav {
     float: right;
     line-height: 56px;
+
+    @media (max-width: @screen-sm-max) {
+      clear: left;
+      float: left;
+      line-height: 40px;
+    }
+
+    ul {
+      padding: 0;
+    }
 
     .item {
       text-transform: uppercase;
@@ -24,6 +36,10 @@ header {
       list-style: none;
       font-family: MontserratRegular;
       padding: 0 15px;
+
+      @media (max-width: @screen-sm-max) {
+        padding: 0 15px 0 0;
+      }
 
       a {
         color: #fff;

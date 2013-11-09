@@ -7,18 +7,37 @@
   height: 550px;
   margin-bottom: 200px;
 
+  @media (max-width: @screen-sm-max) {
+    background-size: auto 100%;
+    margin-bottom: 450px;
+  }
+
   .sample {
     background-image: url("../images/promo_sample.png");
     float: left;
     width: 435px;
     height: 693px;
     margin-top: 30px;
+
+    @media (max-width: @screen-sm-max) {
+      height: 450px;
+      position: absolute;
+      margin: 550px auto 0;
+      right: 0;
+      left: 0;
+      background-position: 15px -110px;
+    }
   }
 
   .message {
     padding-left: 370px;
     margin-top: 50px;
     color: #fff;
+
+    @media (max-width: @screen-sm-max) {
+      padding-left: 0;
+      margin-top: 80px;
+    }
 
     h1 {
       background-color: rgba(0, 0, 0, 0.7);
